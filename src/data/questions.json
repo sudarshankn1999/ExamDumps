@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "type": "single",
+    "category": "Security",
+    "question": "Which is a security feature?",
+    "options": ["RBAC", "Dashboard", "Notebook", "KQL"],
+    "correctAnswer": "RBAC"
+  },
+  {
+    "id": 2,
+    "type": "multi",
+    "category": "Data Engineering",
+    "question": "Select TWO data movement tools.",
+    "maxSelections": 2,
+    "options": ["Pipeline", "Notebook", "RBAC", "Encryption"],
+    "correctAnswers": ["Pipeline", "Notebook"]
+  },
+  {
+    "id": 3,
+    "type": "order",
+    "category": "Analytics",
+    "question": "Arrange in correct order:\nTotal sales in India = var result = orderselect(SUM([totalsales]), location = \"India\") orderselect result",
+    "options": [
+      "var result = orderselect(...)",
+      "orderselect(SUM([totalsales]), location=\"India\")",
+      "result"
+    ],
+    "correctOrder": [
+      "orderselect(SUM([totalsales]), location=\"India\")",
+      "var result = orderselect(...)",
+      "result"
+    ]
+  },
+  {
+    "id": 4,
+    "type": "drag-order",
+    "category": "Architecture",
+    "question": "Drag to arrange lifecycle steps",
+    "options": ["Ingest", "Transform", "Store"],
+    "correctOrder": ["Ingest", "Transform", "Store"]
+  },
+  {
+    "id": 5,
+    "type": "drag-match",
+    "category": "Governance",
+    "question": "Match feature with function",
+    "leftItems": ["RBAC", "Encryption"],
+    "rightItems": ["Access Control", "Data Protection"],
+    "correctMatch": {
+      "RBAC": "Access Control",
+      "Encryption": "Data Protection"
+    }
+  }
+]
